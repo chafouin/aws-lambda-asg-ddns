@@ -65,7 +65,7 @@ resource "aws_iam_role_policy" "asg_ddns_lambda_policy" {
         },
         {
             "Action": [
-                "route53:ListRessourceRecordSets",
+                "route53:ListResourceRecordSets",
                 "route53:ChangeResourceRecordSets"
             ],
             "Resource": "arn:aws:route53:::hostedzone/*",
